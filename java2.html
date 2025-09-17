@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Esempio JavaScript</title>
+<style>
+   .hidden{
+    display:none;
+   }
+</style>
+</head>
+<body>
+
+<p id = "messaggio"> questo messaggio può essere nascosto</p>
+<button onclick="toggleVisibilita()">mostra/nascondi shhhhh</button>
+
+<script>
+
+   function toggleVisibilita(){
+        var messagio = document.getElementById("messaggio");//prendi id di p e mettilo in var messaggio
+        messaggio.classList.toggle("hidden");//metti classe hidden e così verrà nascosto alla visione dell'utente
+   }
+
+</script>
+
+</body>
+</html>

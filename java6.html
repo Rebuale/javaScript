@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>liste</title>
+
+</head>
+<body>
+    <form id = "moForm" onsubmit="return validForm()">
+        <label for = "nome">nome: </label>
+        <input id = "nome" type = "text" name = "nome">
+        <button  type = "submit">invia</button>
+    </form>
+
+    <p id = "errore" style = "color:red"></p>
+    <script>
+        function validForm(){
+            var nome = document.getElementById("nome").value;
+            var errore =document.getElementById("errore");
+
+            if (nome === ""){
+                errore.textContent = "il nome non può essere vuoto";
+                return false;
+            }else{
+                errore.textContent = "";
+                return true;
+            }
+        }
+    </script>
+</body>
+</html>

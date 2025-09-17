@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>liste</title>
+
+</head>
+<body>
+    <h1>Lista </h1>
+    <ul id = "lista">
+       
+    </ul>
+
+
+
+<button onclick="aggiungiEl()">agggiungi 10 elementi alla lista </button>
+
+<script>
+
+   function aggiungiEl(){
+        var lista = document.getElementById("lista");
+        for(var i=1; i<=10; i++){
+            var novoEl = document.createElement("li")
+            novoEl.textContent = "elemento"+i;//cambiare ogni iterazione
+            lista.appendChild(novoEl);
+        }
+       
+   }
+
+</script>
+
+</body>
+</html>

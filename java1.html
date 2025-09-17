@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Esempio JavaScript</title>
+
+<style>
+.highlight {
+    color:red;
+    font-weight: bold;
+
+}
+
+</style>
+</head>
+
+    <body>
+    
+        <h1 id="titolo">Ciao, Mondo!</h1>
+
+        <button onclick="cambiaTesto()">Cliccami!</button>
+            <script>
+                function cambiaTesto() {//funzione del pulsante
+
+                var titolo = document.getElementById("titolo");//sarebbe meglio let, adesso la virabile titolo tiene un riferimento all'elemento html
+                titolo.textContent = "Testo cambiato!";//contenuto del testo
+
+                titolo.classList.add("highlight");//classe AGGIUNTO con classList.add (classi di stile(style)) nella id titolo 
+             }
+        </script>
+    </body>
+</html>
